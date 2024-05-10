@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomota_Interface</title>
+    <!-- link to css File -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Cdn Link from Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!---------------------------nav bar----------------------  -->
+    <div class="nav">
+    <p class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+      </svg></p>
+    <div class="nav_items">
+            <p><a href="#" class="item1">login</a></p>
+            <p><a href="#" class="item2">Create Account</a></p>
+    </div>
+    </div>
+<!-- ---------------------------Body------------------------------ -->
+  <div class="container">
+    <p class="heading"> Breakfast Places in Mumbai</p>
+    <!------------------------------- filter section------ -->
+    <div class="section">
+<!-- --------------------------------------section-------------------- -->
+        <div class="dropdown">
+            <button class="dropbtn">Filter 
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+  <!-- -------------------filter section and div  -->
+          <div class="dropdown-content">
+
+  <!------------------------- select location -------------------------------------->
+            <div class="location">
+                  <label for="browser">Select Location</label>
+                  <input list="browsers" name="browser" id="browser " placeholder="Select Location" >
+                  
+                  <datalist id="browsers" >
+                    <option value="Salem ">
+                    <option value="Coimbatore">
+                    <option value="trichy">
+                    <option value="chennai">
+                  </datalist>
+
+            </div>
+          
+  <!-------------------------------cuisines menu list ------------------------------->
+            <div class="cuisines">
+              <p class="captions">Cuisine</p>
+            
+              <ul>
+                <li>
+                  <input type="checkbox" id="NorthIndian" value="food" class="checkbox_pro">
+                  <label for="NorthIndian">North Indian</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="SouthIndian" value="food" class="checkbox_pro">
+                  <label for="SouthIndian">South Indian</label>
+                  
+                </li>
+                <li>
+                  <input type="checkbox" id="Chinese" value="food" class="checkbox_pro">
+                  <label for="Chinese">Chinese</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="FastFood" value="food" class="checkbox_pro">
+                  <label for="FastFood">Fast Food</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="StreetFood" value="food" class="checkbox_pro">
+                  <label for="StreetFood">Street Food</label>
+                </li>
+              </ul>
+            </div>
+  <!---------------------------------price value selection  -->
+            <div class="cuisines">
+              <p class="captions">Cost For Two</p>
+
+              <ul>
+                <li>
+                  <input type="checkbox" id="pricerate1" value="food" class="checkbox_pro">
+                  <label for="pricerate1">Less than $50</label>
+                  
+                </li>
+                <li>
+                  <input type="checkbox" id="pricerate2" value="food" class="checkbox_pro">
+                  <label for="pricerate2">$50 to $100</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pricerate3" value="food" class="checkbox_pro">
+                  <label for="pricerate3">$100 to $150</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pricerate4" value="food" class="checkbox_pro">
+                  <label for="pricerate4">$150 to $200</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pricerate5" value="food" class="checkbox_pro">
+                  <label for="pricerate5">$200 *</label>
+                </li>
+              </ul>
+            </div>
+  <!-----------------------------sort too------------------  -->
+            <div class="cuisines">
+              <p class="captions">sort</p>
+
+              <ul>
+                <li>
+                  <input type="checkbox" id="sortof1" value="food" class="checkbox_pro">
+                  <label for="sortof1">price low to high</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="sortof2" value="food" class="checkbox_pro">
+                  <label for="sortof2">price high to low</label>
+                </li>
+              
+              </ul>
+            </div>
+
+          </div>
+
+        </div>      
+<!-- --------------------------aside------------------------------- -->
+        <div class="food_item1">
+          <div class="column">
+            <div class="card">
+              
+                  <div class="card_body">
+                    <div class="card_img">
+                    <img src="./bigchill.jpg" alt="Not Found" class="img">
+                    </div>
+                    <span class="card_text">
+                      <p class="card_title">The Big Chill Cakery</p>
+                      <h3>FORT</h3>
+                      <p class="text_muted">Shop 1, Plot D, Samruddhi Complex, Chincoli...</p>
+                    </span>
+                  </div>
+                 <hr>
+                 <div class="menu">
+                <div class="txt1">
+                  <p>CUISINES :</p>
+                  <p>COST OF TWO :</p>
+                </div>
+                <div class="txt2">
+                  <p>Bakery</p>
+                  <p>$70</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="food_item2">
+          <div class="column">
+            <div class="card">
+              
+                  <div class="card_body">
+                    <div class="card_img">
+                    <img src="./bakeshop.jpg" alt="Not Found" class="img">
+                    </div>
+                    <span class="card_text">
+                      <p class="card_title">The Bake Shop</p>
+                      <h3>FORT</h3>
+                      <p class="text_muted">Shop 1, Plot D, Samruddhi Complex, Chincoli...</p>
+                    </span>
+                  </div>
+                 <hr>
+                 <div class="menu">
+                <div class="txt1">
+                  <p>CUISINES :</p>
+                  <p>COST OF TWO :</p>
+                </div>
+                <div class="txt2">
+                  <p>Bakery</p>
+                  <p>$70</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          
+
+        </div>
+<!-- -----------------------------footer--------------------------- -->
+        <div class="pages">
+          <div class="pagebox">
+            <p class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              </svg>
+            </p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+              </svg> 
+            </p>
+          </div>  
+
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
